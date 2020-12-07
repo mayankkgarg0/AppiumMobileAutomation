@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Vendor Tab Suite"  >
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="Listeners.CustomListeners" />
+	</listeners>
+
+  	  <test name="Login Test"  >
+		<classes>
+			<class name="TestCases.LoginTestProcessAssociate" />
+		</classes>
+	</test> 
+	
+          <test name="Create RFP Test" >
+		<classes>
+			<class name="DentalLOCTestCases.RFPtoPreaentationCreation.CreateRFP" />
+		</classes> 
+	</test> 
+	
+  	<test name="Rfp Data Request">
+		<classes>
+			<class name="DentalLOCTestCases.RFPtoPreaentationCreation.RfpDataRequestConfirmation" />
+		</classes> 
+	</test>	     
+	
+ 		 
+
+	
+	
+
+</suite>  <!-- Suite -->
